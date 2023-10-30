@@ -27,6 +27,8 @@ def insert_recipe(name, ingredients, image_path):
     conn.close()
 
 # Function to retrieve existing recipes
+
+
 def get_recipes():
     conn = sqlite3.connect('recipes.db')
     c = conn.cursor()

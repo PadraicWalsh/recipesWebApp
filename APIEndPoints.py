@@ -74,12 +74,9 @@ def get_recipes():
 
 @app.route('/upload_image', methods=['POST'])
 def upload_image():
-    # Handle image upload and save it to a specified directory
-    # You can use a library like Flask-Uploads for this purpose
-    # Ensure the uploaded image is stored securely and has a unique filename
-    # Return the path to the uploaded image or an error message
+    # Handle image upload and save it to a specified director
 
-    # Example code for saving an image (customize this part)
+    # Code for saving an image 
     if 'image' in request.files:
         image = request.files['image']
         if image.filename != '':

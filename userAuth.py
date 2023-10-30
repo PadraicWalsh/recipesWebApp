@@ -2,7 +2,7 @@ from flask import Flask, redirect, url_for, session, request
 from flask_oauthlib.client import OAuth
 
 app = Flask(__name__)
-app.secret_key = 'your_secret_key'  # Replace with your own secret key
+app.secret_key = 'uncle_fester_rocks'
 
 # OAuth configuration for Google
 oauth = OAuth(app)

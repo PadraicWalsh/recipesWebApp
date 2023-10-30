@@ -2,7 +2,10 @@ import streamlit as st
 
 st.title("Rockin' Recipes")
 st.subheader("Share your favourite recipes with us")
-st.write("If you're good in the kitchen, we want to know!")
+st.write("If you're good in the <b>kitchen, we want to know!</b>.",
+         unsafe_allow_html=True)
+
+st.set_page_config(base="dark", primaryColor="purple")
 
 # Create a form to allow users to upload recipes
 recipe_name = st.text_input("Recipe Name, "
